@@ -1,0 +1,11 @@
+[[valid]]
+filename = "testN.2bit"
+origin = "kent"
+
+[[valid]]
+filename = "testMask.2bit"
+origin = "kent"
+  
+[[valid]]
+filename = "eboVir3.2bit"
+origin = "UCSC"
