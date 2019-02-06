@@ -21,7 +21,7 @@ function read_all_specimens(fmt::String)
 end
 
 function list_all_specimens(fmt::String)
-    all_specimens = read_all_specimens(read_all_specimens)
+    all_specimens = read_all_specimens(fmt)
     return vcat(all_specimens["valid"], all_specimens["invalid"])
 end
 
