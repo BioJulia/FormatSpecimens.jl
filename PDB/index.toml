@@ -1,0 +1,27 @@
+[[valid]]
+filename = "1AKE.pdb"
+origin = "PDB"
+
+[[valid]]
+filename = "1SSU.pdb"
+origin = "PDB"
+
+[[valid]]
+filename = "1EN2.pdb"
+origin = "PDB"
+
+[[invalid]]
+filename = "1AKE_err_a.pdb"
+origin = "PDB modified"
+
+[[invalid]]   
+filename = "1AKE_err_b.pdb"
+origin = "PDB modified"
+
+[[invalid]]   
+filename = "1AKE_err_c.pdb"
+origin = "PDB modified"
+ 
+[[invalid]]   
+filename = "1SSU_err.pdb"
+origin = "PDB modified"
