@@ -1,0 +1,24 @@
+[[valid]]
+filename = "310.ab1"
+origin = "biopython"
+
+[[valid]]
+filename = "3100.ab1"
+origin = "biopython"
+
+[[valid]]
+filename = "3730.ab1"
+origin = "biopython"
+
+[[valid]]
+filename = "A6_1-DB3.ab1"
+origin = "biopython"
+
+[[valid]]
+filename = "empty.ab1"
+origin = "biopython"
+
+[[invalid]]
+filename = "fake.ab1"
+origin = "biopython"
+
