@@ -22,7 +22,7 @@ end
 
 function list_all_specimens(fmt::String)
     all_specimens = read_all_specimens(fmt)
-    return vcat(all_specimens["valid"], all_specimens["invalid"])
+    return vcat(get(all_specimens, "valid", Dict{String, Any}[]), get(all_specimens, "invalid", Dict{String, Any}[]))
 end
 
 function list_all_specimens(fn::Function, fmt::String)
