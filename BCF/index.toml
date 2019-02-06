@@ -1,0 +1,9 @@
+[[valid]]
+filename = "example.bcf"
+origin = "SeqAn"
+comments = ["bcftools view -O b ../VCF/example.vcf >example.bcf"]
+
+[[valid]]
+filename = "empty.bcf"
+origin = "bcftools"
+comments = ["bcftools view -O b ../VCF/empty.vcf >empty.bcf"]

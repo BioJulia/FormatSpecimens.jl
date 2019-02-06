@@ -1,0 +1,56 @@
+[[valid]]
+filename = "itemRgb.bed"
+origin = "kent"
+
+[[valid]]
+filename = "bedPileUps-foo.bed"
+origin = "kent"
+
+[[valid]]
+filename = "vgLoadMahoney-clonePcr.bed"
+origin = "kent"
+
+[[valid]]
+filename = "overlapSelect-NM_001206.bed"
+origin = "kent"
+
+[[valid]]
+filename = "overlapSelect-NM_015110.bed"
+origin = "kent"
+
+[[valid]]
+filename = "overlapSelect-NM_015110.split.bed"
+origin = "kent"
+
+[[valid]]
+filename = "overlapSelect-ceil1.in.bed"
+origin = "kent"
+
+[[valid]]
+filename = "overlapSelect-ceil1.sel.bed"
+origin = "kent"
+
+[[valid]]
+filename = "overlapSelect-mrna.bed"
+origin = "kent"
+
+[[valid]]
+filename = "overlapSelect-refgene.bed"
+origin = "kent"
+
+[[valid]]
+filename = "overlapSelect-statsSelect.bed"
+origin = "kent"
+
+[[valid]]
+filename = "overlapSelect-wideSelect.bed"
+origin = "kent"
+
+[[valid]]
+filename = "ws245Genes.WBGene.bed.bgz"
+origin = "UCSC"
+tags = ["gzip"]
+
+[[invalid]]
+filename = "overlapSelect-wideIn.bed"
+origin = "kent"

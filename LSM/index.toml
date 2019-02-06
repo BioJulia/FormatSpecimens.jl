@@ -1,0 +1,17 @@
+[[valid]]
+filename = "ints.tab"
+origin = "BioJulia"
+ 
+[[valid]]
+filename = "commented.tab"
+origin = "BioJulia"
+ 
+[[valid]]
+filename = "NUC.4.4"
+origin = "NCBI"
+tags = ["substmat"]
+ 
+[[valid]]
+filename = "BLOSUM62"
+origin = "NCBI"
+tags = ["substmat"]

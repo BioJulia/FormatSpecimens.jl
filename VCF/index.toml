@@ -1,0 +1,51 @@
+[[valid]]
+filename = "example.vcf"
+origin = "SeqAn"
+
+[[valid]]
+filename = "adeno_virus.vcf"
+origin = "SeqAn"
+
+[[valid]]
+filename = "formatcols.vcf"
+origin = "htslib"
+
+[[valid]]
+filename = "formatmissing.vcf"
+origin = "htslib"
+
+[[valid]]
+filename = "noroundtrip.vcf"
+origin = "htslib"
+
+[[valid]]
+filename = "aa.vcf"
+origin = "bcftools"
+
+[[valid]]
+filename = "ad-bias.vcf"
+origin = "bcftools"
+
+[[valid]]
+filename = "af-dist.vcf"
+origin = "bcftools"
+
+[[valid]]
+filename = "empty.vcf"
+origin = "bcftools"
+
+[[valid]]
+filename = "idx.vcf"
+origin = "bcftools"
+
+[[valid]]
+filename = "reheader.vcf"
+origin = "bcftools"
+
+[[valid]]
+filename = "trio.vcf"
+origin = "bcftools"
+
+[[valid]]
+filename = "view.vcf"
+origin = "bcftools"
