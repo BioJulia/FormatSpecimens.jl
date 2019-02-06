@@ -34,3 +34,36 @@ manipulate lists of specimen files in your unit tests.
 
 # Julia Module
 
+To get a list of all valid or invalid file specimens for a given format, you
+can do the following:
+
+```julia
+using FormatSpecimens
+goodfiles = list_valid_specimens("FASTQ")
+badfiles = list_invalid_specimens("FASTQ")
+```
+
+You can test if a specimen in the list has a given tag, or get an attribute
+like so:
+
+```julia
+# Test if the first entry in the list of goodfiles has the tag "dna" in it's
+
+# list of tags... 
+hastag(goodfiles[1], "dna")
+
+# Get the comments associated with an entry:
+comments(goodfiles[1])
+
+# Get the full path of a file in the entry:
+fp = joinpath(path_of_format("FASTQ"), filename(entry))
+```
+
+You can also use do notation in order to filter the records e.g. to list all the
+valid FASTA files that are of a DNA sequence you can filter by tag:
+
+```julia
+gooddnafiles = list_valid_specimens("FASTA") do x
+    hastag(x, "dna")
+end
+```

@@ -11,12 +11,15 @@ export
     origin,
     hascomments,
     comments,
-    filename
+    filename,
+    path_of_format
     
 using Pkg.TOML
 
+path_of_format(fmt::String) = joinpath(dirname(dirname(@__FILE__)), fmt)
+
 function read_all_specimens(fmt::String)
-    folder = joinpath(dirname(dirname(@__FILE__)), fmt)
+    folder = path_of_format(fmt)
     all_specimens = TOML.parse(open(joinpath(folder, "index.toml"), "r"))
 end
 
