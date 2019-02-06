@@ -1,0 +1,9 @@
+[[valid]]
+filename = "bigWig1.bw"
+origin = "kent"
+tags = ["bigwig"]
+
+[[valid]]
+filename = "insertionsPrimary.bb"
+origin = "kent"
+tags = ["bigbed"]

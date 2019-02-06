@@ -1,0 +1,75 @@
+[[valid]]
+filename = "Homo_sapiens.GRCh38.85.n1000.gff3"
+origin = "Ensembl"
+
+[[valid]]
+filename = "au9_scaffold_subset.gff3"
+origin = "gff3-pltools"
+
+[[valid]]
+filename = "directives.gff3"
+origin = "gff3-pltools"
+
+[[valid]]
+filename = "gff3_with_syncs.gff3"
+origin = "gff3-pltools"
+
+[[valid]]
+filename = "hybrid1.gff3"
+origin = "gff3-pltools"
+
+[[valid]]
+filename = "hybrid2.gff3"
+origin = "gff3-pltools"
+
+[[valid]]
+filename = "knownGene2.gff3"
+origin = "gff3-pltools"
+
+[[valid]]
+filename = "knownGene.gff3"
+origin = "gff3-pltools"
+
+[[valid]]
+filename = "knownGene_out_of_order.gff3"
+origin = "gff3-pltools"
+
+[[valid]]
+filename = "messy_protein_domains.gff3"
+origin = "gff3-pltools"
+
+[[valid]]
+filename = "mm9_sample_ensembl.gff3"
+origin = "gff3-pltools"
+
+[[valid]]
+filename = "spec_eden.gff3"
+origin = "gff3-pltools"
+
+[[valid]]
+filename = "tomato_test.gff3"
+origin = "gff3-pltools"
+
+[[valid]]
+filename = "only_fasta.gff3"
+
+[[valid]]
+filename = "TAIR10.part.gff.bgz"
+origin = "www.arabidopsis.org"
+tags = ["gzip"]
+comments = ["This is a block-compressed file made using bgzip.", "TAIR10.part.gff.bgz.tbi is an index file of it.", "Gene records of Chr4, ChrC, ChrM are kept to reduce the file size. See http =//www.htslib.org/doc/tabix.html."]
+
+[[invalid]]
+filename = "records.gff3"
+origin = "gff3-pltools"
+comments = ["This is a positive example in pltools, but uses '.' as a placeholder where it isn't permitted"]
+
+[[invalid]]
+filename = "spec_match.gff3"
+origin = "gff3-pltools"
+comments = ["Positive example in pltools, but it's not clear that the specification allows fields beyond attributes."]
+
+[[invalid]]
+filename = "tomato_chr4_head.gff3"
+origin = "gff3-pltools"
+comments = ["Positive example in pltools, but it's not clear that the specification allows trailing tab characters after attributes."]

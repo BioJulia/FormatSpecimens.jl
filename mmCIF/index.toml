@@ -1,0 +1,22 @@
+
+[[valid]]
+filename = "1AKE.cif"
+origin = "PDB"
+
+[[valid]]
+filename = "1SSU.cif"
+origin = "PDB"
+
+[[valid]]
+filename = "1EN2.cif"
+origin = "PDB"
+
+[[invalid]]
+filename = "1AKE_err.cif"z
+origin = "PDBmodified"
+
+[[invalid]]
+filename = "1EN2_err.cif"
+origin = "PDBmodified"
+
+
