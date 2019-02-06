@@ -6,13 +6,13 @@ export
     list_invalid_specimens,
     hastags,
     hastag,
-    gettags,
+    tags,
     hasorigin,
-    getorigin,
+    origin,
     hascomments,
-    getcomments
+    comments,
+    filename
     
-
 using Pkg.TOML
 
 function read_all_specimens(fmt::String)
@@ -25,9 +25,21 @@ function list_all_specimens(fmt::String)
     return vcat(all_specimens["valid"], all_specimens["invalid"])
 end
 
+function list_all_specimens(fn::Function, fmt::String)
+    specimens = list_all_specimens(fmt)
+    filter!(fn, specimens)
+    return specimens
+end
+
 function list_valid_specimens(fmt::String)
     all_specimens = read_all_specimens(fmt)
     return get(all_specimens, "valid", Dict{String, Any}[])
+end
+
+function list_valid_specimens(fn::Function, fmt::String)
+    specimens = list_valid_specimens(fmt)
+    filter!(fn, specimens)
+    return specimens
 end
 
 function list_invalid_specimens(fmt::String)
@@ -35,11 +47,17 @@ function list_invalid_specimens(fmt::String)
     return get(all_specimens, "invalid", Dict{String, Any}[])
 end
 
+function list_invalid_specimens(fn::Function, fmt::String)
+    specimens = list_invalid_specimens(fmt)
+    filter!(fn, specimens)
+    return specimens
+end
+
 # Tag operations
 hastags(entry) = haskey(entry, "tags")
 hastag(entry, tag) = hastags(entry) && tag in entry["tags"] ? true : false
 
-function gettags(entry)
+function tags(entry)::Vector{String}
     hastags(entry) || throw(ArgumentError("Index entry has no tags"))
     return entry["tags"]
 end
@@ -48,7 +66,7 @@ end
 hasorigin(entry) = haskey(entry, "origin")
 hasorigin(entry, origin) = hasorigin(entry) && entry["origin"] == origin ? true : false
 
-function getorigin(entry)
+function origin(entry)::String
     hasorigin(entry) || throw(ArgumentError("Index entry has no origin"))
     return entry["origin"]
 end
@@ -56,9 +74,15 @@ end
 # Comments operations
 hascomments(entry) = haskey(entry, "comments")
 
-function getcomments(entry)
+function comments(entry)::Vector{String}
     hascomments(entry) || throw(ArgumentError("Index entry has no comments"))
     return entry["comments"]
+end
+
+# Filename operations
+function filename(entry)::String
+    haskey(entry, "filename") || throw(ArgumentError("Index entry has no filename"))
+    return entry["filename"]
 end
 
 
