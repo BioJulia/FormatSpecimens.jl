@@ -1,0 +1,55 @@
+[[valid]]
+filename = "xx#blank.sam"
+origin = "htslib"
+
+[[valid]]
+filename = "xx#minimal.sam"
+origin = "htslib"
+
+[[valid]]
+filename = "ce#1.sam"
+origin = "htslib"
+
+[[valid]]
+filename = "ce#2.sam"
+origin = "htslib"
+
+[[valid]]
+filename = "ce#5.sam"
+origin = "htslib"
+
+[[valid]]
+filename = "ce#5b.sam"
+origin = "htslib"
+
+[[valid]]
+filename = "ce#unmap.sam"
+origin = "htslib"
+
+[[valid]]
+filename = "ce#unmap1.sam"
+origin = "htslib"
+
+[[valid]]
+filename = "ce#unmap2.sam"
+origin = "htslib"
+
+[[valid]]
+filename = "sam1.sam"
+origin = "BioPython"
+
+[[valid]]
+filename = "sam2.sam"
+origin = "BioPython"
+
+[[valid]]
+filename = "ex1.sam"
+origin = "BioPython"
+
+[[valid]]
+filename = "ex1_header.sam"
+origin = "BioPython"
+
+[[valid]]
+filename = c"igar-64k.sam"
+origin = "Heng Li"
