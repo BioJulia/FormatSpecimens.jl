@@ -1,13 +1,46 @@
-# Bioinformatics Format Specimens
+# <img src="./sticker.svg" width="30%" align="right" /> FormatSpecimens
 
-Bioinformatics is rife with formats and parsers for those formats. These parsers
-don't always agree on the definitions of these formats, since many lack any sort
-of formal standard.
+[![Latest Release](https://img.shields.io/github/release/BioJulia/FormatSpecimens.jl.svg)](https://github.com/BioJulia/FormatSpecimens.jl/releases/latest)
+[![Pkg Status](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
+[![Chat](https://img.shields.io/gitter/room/BioJulia/FormatSpecimens.jl.svg)](https://gitter.im/BioJulia/FormatSpecimens.jl)
 
-This repository aims to consolidate a collection of format specimens to create a
-unified set of data with which to test software against. Testing against the
-same cases is a first step towards agreeing on the details and edge cases of a
-format.
+Bioinformatics is rife with formats and parsers for those formats. 
+
+These parsers don't always agree on the definitions of these formats, since many
+lack any sort of formal standard.
+
+This repository aims to consolidate a collection of format specimens, forming a
+unified file set for testing software. Testing against the same cases is a first
+step towards agreeing on the details and edge cases of a format.
+
+Unlike its predecessor [BioFmtSpeciments](https://github.com/BioJulia/BioFmtSpecimens),
+FormatSpecimens is version controlled and released to a julia package registry,
+and features a small julia module to assist in unit-testing.
+
+# Install
+
+FormatSpecimens is built primarily for [BioJulia](https://biojulia.net), and is
+maintained with compatibility with the BioJulia ecosystem of tools, and BioJulia
+developers in mind. FormatSpecimens is made available to install through BioJulia's
+package registry.
+
+Julia by default only watches the "General" package registry, so before you
+start, you should add the BioJulia package registry.
+
+Start a julia terminal, hit the `]` key to enter pkg mode (you should see the
+prompt change from `julia> ` to `pkg> `), then enter the following command:
+
+```julia
+registry add https://github.com/BioJulia/BioJuliaRegistry.git
+```
+
+After you've added the registry, you can install FormatSpecimens from the julia
+REPL. Press `]` to enter pkg mode again, and enter the following:
+
+```julia
+add FormatSpecimens
+```
+
 
 # Organization
 
@@ -31,6 +64,7 @@ Every entry in the `valid` and `invalid` arrays have the following fields:
 Really the only field absolutely required to retrieve a file using the 
 `FormatSpecimens` julia module is filename, but the other fields are useful to
 manipulate lists of specimen files in your unit tests.
+
 
 # Julia Module
 
