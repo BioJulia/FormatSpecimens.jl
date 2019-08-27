@@ -12,11 +12,9 @@ filename = "1EN2.cif"
 origin = "PDB"
 
 [[invalid]]
-filename = "1AKE_err.cif"z
+filename = "1AKE_err.cif"
 origin = "PDBmodified"
 
 [[invalid]]
 filename = "1EN2_err.cif"
 origin = "PDBmodified"
-
-
