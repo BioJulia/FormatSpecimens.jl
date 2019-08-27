@@ -51,5 +51,5 @@ filename = "ex1_header.sam"
 origin = "BioPython"
 
 [[valid]]
-filename = c"igar-64k.sam"
+filename = "cigar-64k.sam"
 origin = "Heng Li"
