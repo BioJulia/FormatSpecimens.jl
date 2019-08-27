@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Fixed
 - Corrected typo in SAM index.
+- Remove escapes from BAM index.
 
 ## [1.0.0] - 2019-02-06
 ### Added

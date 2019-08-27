@@ -1,37 +1,37 @@
 [[valid]]
 filename = "ce#1.bam"
 origin = "htslib"
-comments = ["samtools view -b ../SAM/ce\#1.sam >ce\#1.bam"]
+comments = ["samtools view -b ../SAM/ce#1.sam >ce#1.bam"]
 
 [[valid]]
 filename = "ce#2.bam"
 origin = "htslib"
-comments = ["samtools view -b ../SAM/ce\#2.sam >ce\#2.bam"]
+comments = ["samtools view -b ../SAM/ce#2.sam >ce#2.bam"]
 
 [[valid]]
 filename = "ce#5.bam"
 origin = "htslib"
-comments = ["samtools view -b ../SAM/ce\#5.sam >ce\#5.bam"]
+comments = ["samtools view -b ../SAM/ce#5.sam >ce#5.bam"]
 
 [[valid]]
 filename = "ce#5b.bam"
 origin = "htslib"
-comments = ["samtools view -b ../SAM/ce\#5b.sam >ce\#5b.bam"]
+comments = ["samtools view -b ../SAM/ce#5b.sam >ce#5b.bam"]
 
 [[valid]]
 filename = "ce#unmap.bam"
 origin = "htslib"
-comments = ["samtools view -b ../SAM/ce\#unmap.sam >ce\#unmap.bam"]
+comments = ["samtools view -b ../SAM/ce#unmap.sam >ce#unmap.bam"]
 
 [[valid]]
 filename = "ce#unmap1.bam"
 origin = "htslib"
-comments = ["samtools view -b ../SAM/ce\#unmap1.sam >ce\#unmap1.bam"]
+comments = ["samtools view -b ../SAM/ce#unmap1.sam >ce#unmap1.bam"]
 
 [[valid]]
 filename = "ce#unmap2.bam"
 origin = "htslib"
-comments = ["samtools view -b ../SAM/ce\#unmap2.sam >ce\#unmap2.bam"]
+comments = ["samtools view -b ../SAM/ce#unmap2.sam >ce#unmap2.bam"]
 
 [[valid]]
 filename = "bam1.bam"
