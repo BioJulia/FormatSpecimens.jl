@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Fixed
+- Corrected typo in SAM index.
+
 ## [1.0.0] - 2019-02-06
 ### Added
 - Files for many formats.
