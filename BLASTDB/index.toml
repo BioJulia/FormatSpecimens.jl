@@ -5,7 +5,7 @@ tags = ["protein"]
 comments = ["made with BLAST v2.3.0+ from ../FASTA/cysprot.fasta, requires 3 files (.pin, .phr, .psq)"]
 
 [[valid]]
-filename = f002.n*
+filename = "f002.n*"
 origin = "BioPython"
 tags = ["dna"]
 comments = ["made with BLAST v2.3.0+ from ../FASTA/f002.fasta, requires 3 files (.nin, .nhr, .nsq)"]

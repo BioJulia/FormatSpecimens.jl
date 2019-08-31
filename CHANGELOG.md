@@ -6,6 +6,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.0.1] - 2019-08-31
+### Added
+- TOML parse test.
+
+### Fixed
+- Corrected typo in SAM index.
+- Remove escapes from BAM index.
+- Added quotes to filename in BLASTDB index.
+- Corrected typo in mmCIF index.
+
 ## [1.0.0] - 2019-02-06
 ### Added
 - Files for many formats.
@@ -13,5 +23,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Simple usage guide in the readme.
 
 
-[Unreleased]: https://github.com/BioJulia/BioSequences.jl/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/BioJulia/BioSequences.jl/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/BioJulia/BioSequences.jl/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/BioJulia/BioSequences.jl/tree/v1.0.0
