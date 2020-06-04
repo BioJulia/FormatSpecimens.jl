@@ -7,7 +7,7 @@ using FormatSpecimens
 
     path = joinpath(@__DIR__, "..")
 
-    exclusions = [".git", "src", "test", "juliamnt"]
+    exclusions = [".git", "src", "test", "juliamnt", ".github"]
 
     formats = filter(str -> isdir(joinpath(path, str)) && !in(str, exclusions), readdir(path))
 
