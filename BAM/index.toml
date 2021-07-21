@@ -66,3 +66,9 @@ filename = "cigar-64k.bam"
 origin = "Heng-Li"
 tags = ["bai"]
 comments = ["records with long-cigar strings (>65535 operations)"]
+
+[[valid]]
+filename = "SRR7993829_1.100K.forward.bam"
+origin = "Haruka Ozaki"
+tags = ["bai"]
+comments = ["https://github.com/BioJulia/XAM.jl/issues/31", "BAI"]
