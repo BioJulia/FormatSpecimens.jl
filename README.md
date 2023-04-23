@@ -19,7 +19,7 @@ and features a small julia module to assist in unit-testing.
 
 # Install
 
-FormatSpecimens is built primarily for [BioJulia](https://biojulia.net), and is
+FormatSpecimens is built primarily for [BioJulia](https://biojulia.dev), and is
 maintained with compatibility with the BioJulia ecosystem of tools, and BioJulia
 developers in mind. FormatSpecimens is made available to install through BioJulia's
 package registry.
