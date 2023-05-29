@@ -72,3 +72,10 @@ filename = "SRR7993829_1.100K.forward.bam"
 origin = "Haruka Ozaki"
 tags = ["bai"]
 comments = ["https://github.com/BioJulia/XAM.jl/issues/31", "BAI"]
+
+[[valid]]
+filename = "NIST7035_H7AP8ADXX_NA12878_chr22_MRPL40_hg19.bam"
+origin = "NA12878 Garvan_NA12878_HG001_HiSeq_Exome"
+tags = ["bai"]
+comments = ["Only gene MRPL40 on chromosome 22 has been kept",
+"https://ftp-trace.ncbi.nlm.nih.gov/ReferenceSamples/giab/data/NA12878/Garvan_NA12878_HG001_HiSeq_Exome/"]
