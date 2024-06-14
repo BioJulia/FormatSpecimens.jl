@@ -1,0 +1,12 @@
+[[valid]]
+filename = "good1.paf"
+
+[[valid]]
+filename = "good2.paf"
+comments = [
+    "Integer with value typemax(Int32)",
+    "Trailing whitespace",
+    "Non-ASCII names",
+    "Zero-length name field",
+    "Various AUX tags",
+]
