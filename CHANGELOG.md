@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.2.0]
+- Add PAF format
+- Remove Pkg dependency in favor of TOML
+
+## [1.1.0]
+- Add BAM file: SRR7993829_1.100K.forward.bam
+
 ## [1.0.1] - 2019-08-31
 ### Added
 - TOML parse test.

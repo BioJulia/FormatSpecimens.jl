@@ -6,6 +6,7 @@ filename = "good2.paf"
 comments = [
     "Integer with value typemax(Int32)",
     "Trailing whitespace",
+    "Trailing whitespace in Z aux field",
     "Non-ASCII names",
     "Zero-length name field",
     "Various AUX tags",
