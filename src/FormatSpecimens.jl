@@ -14,7 +14,7 @@ export
     filename,
     path_of_format
     
-using Pkg.TOML
+using TOML
 
 path_of_format(fmt::String) = joinpath(dirname(dirname(@__FILE__)), fmt)
 
