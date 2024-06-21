@@ -11,3 +11,9 @@ comments = [
     "Zero-length name field",
     "Various AUX tags",
 ]
+
+[[valid]]
+filename = "good3.paf"
+comments = [
+    "Unmapped record"
+]
