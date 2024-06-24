@@ -40,7 +40,7 @@ filename = "f002.fasta"
 origin = "BioPython"
 tags = ["dna", "multi"]
 
-[[valid]]
+[[invalid]]
 filename = "f003.fasta"
 origin = "BioPython"
 tags = ["dna", "multi", "comments"]
