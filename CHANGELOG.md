@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.3.1]
+- List FASTA/f003.fasta as invalid, since it has comments with the invalid hash
+  sign instead of semicolon.
+
+## [1.3.0]
+- Add PAF/good3.paf
+- Fix error in PAF/good2.paf
+
 ## [1.2.0]
 - Add PAF format
 - Remove Pkg dependency in favor of TOML
