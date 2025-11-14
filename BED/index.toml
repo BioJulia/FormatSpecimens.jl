@@ -49,7 +49,7 @@ origin = "kent"
 [[valid]]
 filename = "ws245Genes.WBGene.bed.bgz"
 origin = "UCSC"
-tags = ["gzip"]
+tags = ["bgzip"]
 
 [[invalid]]
 filename = "overlapSelect-wideIn.bed"

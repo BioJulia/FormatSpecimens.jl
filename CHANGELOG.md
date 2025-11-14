@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.3.2]
+- Correct Block GNU Zip tags.
+
 ## [1.3.1]
 - List FASTA/f003.fasta as invalid, since it has comments with the invalid hash
   sign instead of semicolon.
@@ -38,7 +41,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Simple usage guide in the readme.
 
 
-[Unreleased]: https://github.com/BioJulia/BioSequences.jl/compare/v1.3.1...HEAD
+[Unreleased]: https://github.com/BioJulia/BioSequences.jl/compare/v1.3.2...HEAD
+[1.3.2]: https://github.com/BioJulia/BioSequences.jl/compare/v1.3.1...v1.3.2
 [1.3.1]: https://github.com/BioJulia/BioSequences.jl/compare/v1.3.0...v1.3.1
 [1.3.0]: https://github.com/BioJulia/BioSequences.jl/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/BioJulia/BioSequences.jl/compare/v1.1.0...v1.2.0
