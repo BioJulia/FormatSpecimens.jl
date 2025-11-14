@@ -47,6 +47,10 @@ filename = "overlapSelect-wideSelect.bed"
 origin = "kent"
 
 [[valid]]
+filename = "ws245Genes.WBGene.bed"
+origin = "UCSC"
+
+[[valid]]
 filename = "ws245Genes.WBGene.bed.bgz"
 origin = "UCSC"
 tags = ["bgzip"]

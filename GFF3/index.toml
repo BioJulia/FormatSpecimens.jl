@@ -54,6 +54,10 @@ origin = "gff3-pltools"
 filename = "only_fasta.gff3"
 
 [[valid]]
+filename = "TAIR10.part.gff"
+origin = "www.arabidopsis.org"
+
+[[valid]]
 filename = "TAIR10.part.gff.bgz"
 origin = "www.arabidopsis.org"
 tags = ["bgzip"]
