@@ -1,0 +1,110 @@
+# Coordinate-sorted index (CSI) files.
+# The companion data files HG02450.bam, ex1.bcf.gz, modhdr.vcf.gz, no_hdr_sq_1.bam
+# and roh.1.vcf.gz are included so that queries against those indices can be tested.
+# All indices use min_shift = 14, except HG02450.bam.csi (min_shift = 10).
+
+[[valid]]
+filename = "index.bam.csi"
+origin = "htslib"
+tags = ["bam", "unmapped"]
+comments = [
+    "https://github.com/samtools/htslib/blob/ae5f79dd51cd296195293690b6f59f0b982ae877/test/index.bam.csi",
+    "Index of htslib test/index.sam converted to BAM (data file not included)",
+    "depth = 2, no auxiliary data",
+    "7 references, of which only 3 have bins",
+    "50 unplaced unmapped reads (n_no_coor = 50)",
+]
+
+[[valid]]
+filename = "index.sam.gz.csi"
+origin = "htslib"
+tags = ["sam", "unmapped"]
+comments = [
+    "https://github.com/samtools/htslib/blob/ae5f79dd51cd296195293690b6f59f0b982ae877/test/index.sam.gz.csi",
+    "Index of htslib test/index.sam compressed with bgzip (data file not included)",
+    "Same records as index.bam.csi, but different virtual offsets",
+    "depth = 2, no auxiliary data",
+    "7 references, of which only 3 have bins",
+    "50 unplaced unmapped reads (n_no_coor = 50)",
+]
+
+[[valid]]
+filename = "index.bcf.csi"
+origin = "htslib"
+tags = ["bcf"]
+comments = [
+    "https://github.com/samtools/htslib/blob/ae5f79dd51cd296195293690b6f59f0b982ae877/test/index.bcf.csi",
+    "Index of htslib test/index.vcf converted to BCF (data file not included)",
+    "depth = 5, no auxiliary data",
+    "86 references, of which only 3 have bins",
+]
+
+[[valid]]
+filename = "index.vcf.gz.csi"
+origin = "htslib"
+tags = ["vcf", "tabix"]
+comments = [
+    "https://github.com/samtools/htslib/blob/ae5f79dd51cd296195293690b6f59f0b982ae877/test/index.vcf.gz.csi",
+    "Index of htslib test/index.vcf compressed with bgzip (data file not included)",
+    "depth = 6",
+    "Tabix-style auxiliary data (VCF preset) with 3 sequence names",
+]
+
+[[valid]]
+filename = "modhdr.vcf.gz.csi"
+origin = "htslib"
+tags = ["vcf", "tabix", "empty"]
+comments = [
+    "https://github.com/samtools/htslib/blob/ae5f79dd51cd296195293690b6f59f0b982ae877/test/modhdr.vcf.gz.csi",
+    "Index of modhdr.vcf.gz, which contains a header but no records",
+    "depth = 6",
+    "Tabix-style auxiliary data (VCF preset) with zero sequence names",
+    "Zero references (n_ref = 0)",
+]
+
+[[valid]]
+filename = "no_hdr_sq_1.bam.csi"
+origin = "htslib"
+tags = ["bam"]
+comments = [
+    "https://github.com/samtools/htslib/blob/ae5f79dd51cd296195293690b6f59f0b982ae877/test/no_hdr_sq_1.bam.csi",
+    "Index of no_hdr_sq_1.bam, a BAM file with no @SQ header lines",
+    "depth = 2, no auxiliary data",
+    "5 references, of which only 1 has bins",
+]
+
+[[valid]]
+filename = "roh.1.vcf.gz.csi"
+origin = "bcftools"
+tags = ["vcf", "tabix"]
+comments = [
+    "https://github.com/samtools/bcftools/blob/bd966334d314941652c0cda8d81a917907953df6/test/roh.1.vcf.gz.csi",
+    "Index of roh.1.vcf.gz (3124 records)",
+    "depth = 6",
+    "Tabix-style auxiliary data (VCF preset) with 1 sequence name",
+    "1116 bins (about 35 KB decompressed)",
+]
+
+[[valid]]
+filename = "HG02450.bam.csi"
+origin = "igv.js"
+tags = ["bam", "min_shift"]
+comments = [
+    "https://github.com/igvteam/igv.js/blob/b5d64807ee940a2eaf9a64b093f71445e9a3c620/test/data/bam/HG02450.bam.csi",
+    "Index of HG02450.bam: 1000 Genomes sample HG02450, region 1:120000-124000",
+    "Non-default min_shift = 10, depth = 6, no auxiliary data",
+    "86 references, of which only 1 has bins",
+    "354 records: 348 mapped and 6 placed unmapped",
+]
+
+[[valid]]
+filename = "ex1.bcf.gz.csi"
+origin = "Rsamtools"
+tags = ["bcf", "depth"]
+comments = [
+    "https://github.com/Bioconductor/Rsamtools/blob/4fdb05737c9a2686c971c0797a99c3634e3f3878/inst/extdata/ex1.bcf.gz.csi",
+    "Index of ex1.bcf.gz, variant calls from samtools' ex1 example (3065 records)",
+    "depth = 0 (a single bin level), since both contigs (1575 and 1584 bp) are shorter than 2^min_shift",
+    "min_shift = 14, no auxiliary data",
+    "2 references",
+]
